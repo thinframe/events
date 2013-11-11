@@ -1,0 +1,5 @@
+services:
+    thinframe.events.dispatcher:
+        class: 'ThinFrame\Events\Dispatcher'
+        tags:
+          - { name: 'thinframe.events.dispatcher'}
