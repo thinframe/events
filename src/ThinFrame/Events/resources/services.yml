@@ -3,3 +3,8 @@ services:
         class: 'ThinFrame\Events\Dispatcher'
         tags:
           - { name: 'thinframe.events.dispatcher'}
+
+    thinframe.events.sample_listener:
+        class: 'ThinFrame\Events\Tests\Samples\SampleListener'
+        tags:
+          - { name: 'thinframe.events.listener' }

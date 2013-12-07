@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "acd1dffc8ff87cd8e5f1de251f6a0f73",
+    "hash": "e67018fb7397fbc9d3621ffcb1edf215",
     "packages": [
         {
             "name": "phpcollection/phpcollection",
@@ -535,6 +535,158 @@
             "time": "2013-07-23 04:42:59"
         },
         {
+            "name": "symfony/config",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Config",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Config.git",
+                "reference": "61b6bb7963508cfadedaf6ed2b04c6c9bd954156"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/61b6bb7963508cfadedaf6ed2b04c6c9bd954156",
+                "reference": "61b6bb7963508cfadedaf6ed2b04c6c9bd954156",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/filesystem": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Config\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Config Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-11-26 16:42:52"
+        },
+        {
+            "name": "symfony/dependency-injection",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/DependencyInjection",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/DependencyInjection.git",
+                "reference": "7dc5be9f16e653a6b453824206fdae4cfda88f52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/7dc5be9f16e653a6b453824206fdae4cfda88f52",
+                "reference": "7dc5be9f16e653a6b453824206fdae4cfda88f52",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/config": "~2.2",
+                "symfony/expression-language": "~2.4",
+                "symfony/yaml": "~2.0"
+            },
+            "suggest": {
+                "symfony/config": "",
+                "symfony/proxy-manager-bridge": "Generate service proxies to lazy load them",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\DependencyInjection\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony DependencyInjection Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-12-03 14:52:29"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Filesystem",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Filesystem.git",
+                "reference": "c136348f53ef538f1a3fa0b25b73c9c3bf223b31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/c136348f53ef538f1a3fa0b25b73c9c3bf223b31",
+                "reference": "c136348f53ef538f1a3fa0b25b73c9c3bf223b31",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-11-24 20:17:07"
+        },
+        {
             "name": "symfony/yaml",
             "version": "dev-master",
             "target-dir": "Symfony/Component/Yaml",
@@ -580,6 +732,54 @@
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
             "time": "2013-11-26 16:42:52"
+        },
+        {
+            "name": "thinframe/applications",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thinframe/applications.git",
+                "reference": "cf4d2e8505fc2dea2f635d33169b722c1e5b370d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thinframe/applications/zipball/cf4d2e8505fc2dea2f635d33169b722c1e5b370d",
+                "reference": "cf4d2e8505fc2dea2f635d33169b722c1e5b370d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "symfony/config": "dev-master",
+                "symfony/dependency-injection": "dev-master",
+                "symfony/yaml": "dev-master",
+                "thinframe/foundation": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sorin Badea",
+                    "email": "sorin.badea91@gmail.com",
+                    "homepage": "http://sorinbadea.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP applications ecosystem",
+            "homepage": "http://thinframe.net",
+            "keywords": [
+                "Applications",
+                "ecosystem",
+                "thinframe"
+            ],
+            "time": "2013-12-02 10:44:01"
         }
     ],
     "aliases": [
@@ -587,7 +787,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "thinframe/foundation": 20
+        "thinframe/foundation": 20,
+        "thinframe/applications": 20
     },
     "platform": {
         "php": ">=5.4.0"
