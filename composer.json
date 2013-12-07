@@ -5,6 +5,9 @@
     "description": "Powerful events system.",
     "keywords": ["thinframe", "events"],
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/thinframe/events/issues"
+    },
     "authors": [
         {
             "name": "Sorin Badea",
@@ -18,9 +21,17 @@
         "php": ">=5.4.0",
         "thinframe/foundation": "dev-master"
     },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
     "autoload": {
         "psr-0": {
             "": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.2-dev"
         }
     }
 }
