@@ -2,6 +2,8 @@
 
 Powerful events system.
 
+[![Build Status](https://secure.travis-ci.org/thinframe/events.png?branch=master)](http://travis-ci.org/thinframe/events)
+
 ###Features
 1. Priority support
 2. Abstract dispatchers with magic methods
