@@ -3,20 +3,69 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e67018fb7397fbc9d3621ffcb1edf215",
+    "hash": "c2dda1f295b1b9491d3c911637bf841f",
     "packages": [
         {
-            "name": "phpcollection/phpcollection",
-            "version": "dev-master",
+            "name": "danielstjules/stringy",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmittjoh/php-collection.git",
-                "reference": "5c8ec0d1091c95b973b59a3bf0eb19c5de72d8d1"
+                "url": "https://github.com/danielstjules/Stringy.git",
+                "reference": "6ba29637b2b2bc8cfd735539c6f9716ae8957477"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-collection/zipball/5c8ec0d1091c95b973b59a3bf0eb19c5de72d8d1",
-                "reference": "5c8ec0d1091c95b973b59a3bf0eb19c5de72d8d1",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/6ba29637b2b2bc8cfd735539c6f9716ae8957477",
+                "reference": "6ba29637b2b2bc8cfd735539c6f9716ae8957477",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Stringy": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel St. Jules",
+                    "email": "danielst.jules@gmail.com",
+                    "homepage": "http://www.danielstjules.com"
+                }
+            ],
+            "description": "A string manipulation library with multibyte support",
+            "homepage": "https://github.com/danielstjules/Stringy",
+            "keywords": [
+                "UTF",
+                "helpers",
+                "manipulation",
+                "methods",
+                "multibyte",
+                "string",
+                "utf-8",
+                "utility",
+                "utils"
+            ],
+            "time": "2013-12-05 04:36:17"
+        },
+        {
+            "name": "phpcollection/phpcollection",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-collection.git",
+                "reference": "4925a0d7a39e137447a8f9d6339e6921fa09dca8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-collection/zipball/4925a0d7a39e137447a8f9d6339e6921fa09dca8",
+                "reference": "4925a0d7a39e137447a8f9d6339e6921fa09dca8",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +102,7 @@
                 "sequence",
                 "set"
             ],
-            "time": "2013-08-22 09:46:14"
+            "time": "2013-07-16 08:26:26"
         },
         {
             "name": "phpoption/phpoption",
@@ -110,17 +159,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/foundation.git",
-                "reference": "4fc80b64464220261b8980b0a0ee4b6f6486d32b"
+                "reference": "a6894d4afbcf33f04c7e8c7bde518c02153828ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/foundation/zipball/4fc80b64464220261b8980b0a0ee4b6f6486d32b",
-                "reference": "4fc80b64464220261b8980b0a0ee4b6f6486d32b",
+                "url": "https://api.github.com/repos/thinframe/foundation/zipball/a6894d4afbcf33f04c7e8c7bde518c02153828ef",
+                "reference": "a6894d4afbcf33f04c7e8c7bde518c02153828ef",
                 "shasum": ""
             },
             "require": {
+                "danielstjules/stringy": "1.2.*",
                 "php": ">=5.4.0",
-                "phpcollection/phpcollection": "dev-master"
+                "phpcollection/phpcollection": "0.3.*"
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
@@ -154,7 +204,7 @@
                 "foundation",
                 "thinframe"
             ],
-            "time": "2013-12-06 21:32:15"
+            "time": "2013-12-10 20:40:48"
         }
     ],
     "packages-dev": [
@@ -408,12 +458,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "236f65cc97d6beaa8fcb8a27b19bd278f3912677"
+                "reference": "6b77c60ed70c4af6cd17a87b054c86d69a67d740"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/236f65cc97d6beaa8fcb8a27b19bd278f3912677",
-                "reference": "236f65cc97d6beaa8fcb8a27b19bd278f3912677",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6b77c60ed70c4af6cd17a87b054c86d69a67d740",
+                "reference": "6b77c60ed70c4af6cd17a87b054c86d69a67d740",
                 "shasum": ""
             },
             "require": {
@@ -474,7 +524,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-11-06 01:58:51"
+            "time": "2013-12-08 12:01:47"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

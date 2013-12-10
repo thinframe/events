@@ -9,10 +9,9 @@
 
 namespace ThinFrame\Events;
 
+use Stringy\StaticStringy;
 use ThinFrame\Events\Constants\Priority;
 use ThinFrame\Foundation\Exceptions\InvalidArgumentException;
-use ThinFrame\Foundation\Helpers\Strings\StringInflector;
-use ThinFrame\Foundation\Helpers\Strings\StringValidator;
 
 /**
  * Class AbstractDispatcher
@@ -31,8 +30,8 @@ abstract class AbstractDispatcher extends Dispatcher
      */
     public function __call($name, array $arguments)
     {
-        if (StringValidator::startsWith($name, 'on')) {
-            $eventId = StringInflector::toCamelCase(substr($name, 2));
+        if (StaticStringy::startsWith($name, 'on')) {
+            $eventId = StaticStringy::camelize(substr($name, 2));
             if (!isset($arguments[0]) || !is_callable($arguments[0])) {
                 throw new InvalidArgumentException('Invalid or missing callback for event');
             }
