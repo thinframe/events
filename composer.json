@@ -18,16 +18,16 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "thinframe/foundation": "dev-master"
+        "thinframe/foundation": "dev-master",
+        "thinframe/applications": "dev-master"
     },
     "minimum-stability":"dev",
     "require-dev": {
-        "phpunit/phpunit": "3.7.*",
-        "thinframe/applications": "dev-master"
+        "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
-        "psr-0": {
-            "": "src/"
+        "psr-4": {
+            "ThinFrame\\Events\\": "src/"
         }
     },
     "extra": {
