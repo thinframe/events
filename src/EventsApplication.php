@@ -10,7 +10,7 @@
 namespace ThinFrame\Events;
 
 use ThinFrame\Applications\AbstractApplication;
-use ThinFrame\Applications\DependencyInjection\AwareInterfaceDefinition;
+use ThinFrame\Applications\DependencyInjection\AwareDefinition;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 use ThinFrame\Events\DependencyInjection\EventsCompilerPass;
 
@@ -31,15 +31,15 @@ class EventsApplication extends AbstractApplication
      */
     public function initializeConfigurator(ContainerConfigurator $configurator)
     {
-        $configurator->addAwareInterfaceDefinition(
-            new AwareInterfaceDefinition(
+        $configurator->addAwareDefinition(
+            new AwareDefinition(
                 '\ThinFrame\Events\DispatcherAwareInterface',
                 'setDispatcher',
                 'thinframe.events.dispatcher'
             )
         );
-        $configurator->addAwareInterfaceDefinition(
-            new AwareInterfaceDefinition(
+        $configurator->addAwareDefinition(
+            new AwareDefinition(
                 '\ThinFrame\Events\DispatcherAwareTrait',
                 'setDispatcher',
                 'thinframe.events.dispatcher'

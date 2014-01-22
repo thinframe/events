@@ -106,7 +106,7 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "dev-master",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
@@ -358,25 +358,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/applications.git",
-                "reference": "2a32c18c2525c3dcbe3a6580531f67925bbb949c"
+                "reference": "353ab1790d2bbc3ec7df3e23ae5966f73b65fe54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/applications/zipball/2a32c18c2525c3dcbe3a6580531f67925bbb949c",
-                "reference": "2a32c18c2525c3dcbe3a6580531f67925bbb949c",
+                "url": "https://api.github.com/repos/thinframe/applications/zipball/353ab1790d2bbc3ec7df3e23ae5966f73b65fe54",
+                "reference": "353ab1790d2bbc3ec7df3e23ae5966f73b65fe54",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "symfony/config": "dev-master",
-                "symfony/dependency-injection": "dev-master",
-                "symfony/yaml": "dev-master",
+                "symfony/config": "@stable",
+                "symfony/dependency-injection": "@stable",
+                "symfony/yaml": "@stable",
                 "thinframe/foundation": "dev-master"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "": "src/"
+                "psr-4": {
+                    "ThinFrame\\Applications\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -398,7 +398,7 @@
                 "ecosystem",
                 "thinframe"
             ],
-            "time": "2013-12-27 12:09:35"
+            "time": "2014-01-22 19:30:50"
         },
         {
             "name": "thinframe/foundation",
@@ -406,12 +406,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/foundation.git",
-                "reference": "ea50c8b5259ffff65c65de32cfa16a05fe129bad"
+                "reference": "9185ddd7c9ac915ca98005beb4916f3cc010dce8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/foundation/zipball/ea50c8b5259ffff65c65de32cfa16a05fe129bad",
-                "reference": "ea50c8b5259ffff65c65de32cfa16a05fe129bad",
+                "url": "https://api.github.com/repos/thinframe/foundation/zipball/9185ddd7c9ac915ca98005beb4916f3cc010dce8",
+                "reference": "9185ddd7c9ac915ca98005beb4916f3cc010dce8",
                 "shasum": ""
             },
             "require": {
@@ -451,7 +451,7 @@
                 "foundation",
                 "thinframe"
             ],
-            "time": "2014-01-14 21:34:38"
+            "time": "2014-01-22 18:16:30"
         }
     ],
     "packages-dev": [
@@ -705,12 +705,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "5b150a8229d645aeea49546284bf74cc561a1182"
+                "reference": "0a32f059e6e66cdfdd0d7c757646fdcbf822b0ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5b150a8229d645aeea49546284bf74cc561a1182",
-                "reference": "5b150a8229d645aeea49546284bf74cc561a1182",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0a32f059e6e66cdfdd0d7c757646fdcbf822b0ca",
+                "reference": "0a32f059e6e66cdfdd0d7c757646fdcbf822b0ca",
                 "shasum": ""
             },
             "require": {
@@ -771,7 +771,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-01-11 08:28:18"
+            "time": "2014-01-15 07:18:27"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
