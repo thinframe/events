@@ -19,9 +19,10 @@
     "require": {
         "php": ">=5.4.0",
         "thinframe/foundation": "@stable",
-        "thinframe/applications": "@stable"
+        "thinframe/applications": "@stable",
+        "thinframe/monolog": "dev-master"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require-dev": {
         "phpunit/phpunit": "@stable"
     },

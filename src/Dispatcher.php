@@ -10,6 +10,7 @@
 namespace ThinFrame\Events;
 
 use PhpCollection\Map;
+use Psr\Log\LoggerAwareTrait;
 use ThinFrame\Events\Constants\Priority;
 use ThinFrame\Foundation\Constants\DataType;
 use ThinFrame\Foundation\Helpers\TypeCheck;
@@ -22,6 +23,8 @@ use ThinFrame\Foundation\Helpers\TypeCheck;
  */
 class Dispatcher
 {
+    use LoggerAwareTrait;
+
     /**
      * @var Map
      */
@@ -104,7 +107,16 @@ class Dispatcher
                 $callback,
                 ['event' => $event]
             );
+            if (is_array($callback)) {
+                $subscriber = get_class($callback[0]) . '::' . $callback[1];
+            } elseif (is_string($callback)) {
+                $subscriber = $callback;
+            } else {
+                $subscriber = get_class($callback);
+            }
+            $this->logger->debug("Event '" . $event->getEventId() . "' triggered '" . $subscriber . "'");
             if (!$event->shouldPropagate()) {
+                $this->logger->debug("'$subscriber' stopped propagation of '" . $event->getEventId() . "'");
                 break;
             }
         }

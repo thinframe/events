@@ -13,6 +13,7 @@ use ThinFrame\Applications\AbstractApplication;
 use ThinFrame\Applications\DependencyInjection\AwareDefinition;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 use ThinFrame\Events\DependencyInjection\EventsCompilerPass;
+use ThinFrame\Monolog\MonologApplication;
 
 /**
  * Class EventsApplication
@@ -77,6 +78,8 @@ class EventsApplication extends AbstractApplication
      */
     protected function getParentApplications()
     {
-        return [];
+        return [
+            new MonologApplication()
+        ];
     }
 }
