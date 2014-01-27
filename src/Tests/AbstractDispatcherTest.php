@@ -9,6 +9,8 @@
 
 namespace ThinFrame\Events\Tests;
 
+use Monolog\Handler\NullHandler;
+use Monolog\Logger;
 use ThinFrame\Events\SimpleEvent;
 use ThinFrame\Events\Tests\Samples\SampleDispatcher;
 use ThinFrame\Foundation\Exceptions\InvalidArgumentException;
@@ -21,6 +23,21 @@ use ThinFrame\Foundation\Exceptions\InvalidArgumentException;
  */
 class AbstractDispatcherTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var Logger
+     */
+    private $logger;
+
+    /**
+     * {@inheritDoc}
+     */
+    protected function setUp()
+    {
+        parent::setUp();
+        $this->logger = new Logger('thinframe.events');
+        $this->logger->pushHandler(new NullHandler());
+    }
+
 
     /**
      * Test hooking
@@ -28,6 +45,8 @@ class AbstractDispatcherTest extends \PHPUnit_Framework_TestCase
     public function testHooking()
     {
         $dispatcher = new SampleDispatcher();
+
+        $dispatcher->setLogger($this->logger);
 
         $triggered = false;
 
@@ -49,6 +68,8 @@ class AbstractDispatcherTest extends \PHPUnit_Framework_TestCase
     {
         $dispatcher = new SampleDispatcher();
 
+        $dispatcher->setLogger($this->logger);
+
         try {
             $dispatcher->osomeevent('var_dump');
             $this->assertFalse(true, 'AbstractDispatcher should throw an exception');
@@ -66,6 +87,8 @@ class AbstractDispatcherTest extends \PHPUnit_Framework_TestCase
     public function testCallbackValidator()
     {
         $dispatcher = new SampleDispatcher();
+
+        $dispatcher->setLogger($this->logger);
 
         try {
             $dispatcher->onsomeevent('some_invalid_callback');

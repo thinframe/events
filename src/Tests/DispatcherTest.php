@@ -9,6 +9,8 @@
 
 namespace ThinFrame\Events\Tests;
 
+use Monolog\Handler\NullHandler;
+use Monolog\Logger;
 use ThinFrame\Events\Constants\Priority;
 use ThinFrame\Events\Dispatcher;
 use ThinFrame\Events\SimpleEvent;
@@ -27,6 +29,23 @@ class DispatcherTest extends \PHPUnit_Framework_TestCase
      * @var Dispatcher
      */
     private $dispatcher;
+
+    /**
+     * @var Logger
+     */
+    private $logger;
+
+    /**
+     * {@inheritDoc}
+     */
+    protected function setUp()
+    {
+        parent::setUp();
+        $this->logger = new Logger('thinframe.events');
+        $this->logger->pushHandler(new NullHandler());
+        $this->dispatcher = new Dispatcher();
+        $this->dispatcher->setLogger($this->logger);
+    }
 
     /**
      * Test dispatcher attachTo method arguments validation
@@ -148,14 +167,4 @@ class DispatcherTest extends \PHPUnit_Framework_TestCase
 
         $this->assertTrue($listener->triggered, 'Listener should have been triggered');
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    protected function setUp()
-    {
-        parent::setUp();
-        $this->dispatcher = new Dispatcher();
-    }
-
 }
