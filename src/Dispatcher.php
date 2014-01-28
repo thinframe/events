@@ -121,4 +121,14 @@ class Dispatcher
             }
         }
     }
+
+    /**
+     * Get all registered hooks
+     *
+     * @return Map
+     */
+    public function getHooks()
+    {
+        return $this->queues;
+    }
 }
