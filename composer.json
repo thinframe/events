@@ -20,7 +20,7 @@
         "php": ">=5.4.0",
         "thinframe/foundation": "dev-develop",
         "thinframe/applications": "dev-develop",
-        "thinframe/monolog": "dev-master"
+        "thinframe/monolog": "dev-develop"
     },
     "minimum-stability": "dev",
     "require-dev": {

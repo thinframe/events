@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "cb1920c741d4452a78c7be85054f6120",
+    "hash": "05ccf86b2e35e93d94ad5b5a6ff596c4",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "9399f7a6943ea1ed76d4e3b261310e904e5aa346"
+                "reference": "a7c5b8721c03e9e5686ab5b874032691e5d575ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/9399f7a6943ea1ed76d4e3b261310e904e5aa346",
-                "reference": "9399f7a6943ea1ed76d4e3b261310e904e5aa346",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/a7c5b8721c03e9e5686ab5b874032691e5d575ca",
+                "reference": "a7c5b8721c03e9e5686ab5b874032691e5d575ca",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2014-02-13 11:32:54"
+            "time": "2014-02-13 18:29:57"
         },
         {
             "name": "monolog/monolog",
@@ -574,21 +574,21 @@
         },
         {
             "name": "thinframe/monolog",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/monolog.git",
-                "reference": "6c70016bff4204bcf6876445a3dbe1f794e26943"
+                "reference": "98c52a2be8a7cbe594d010cd5937a56f8353d733"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/monolog/zipball/6c70016bff4204bcf6876445a3dbe1f794e26943",
-                "reference": "6c70016bff4204bcf6876445a3dbe1f794e26943",
+                "url": "https://api.github.com/repos/thinframe/monolog/zipball/98c52a2be8a7cbe594d010cd5937a56f8353d733",
+                "reference": "98c52a2be8a7cbe594d010cd5937a56f8353d733",
                 "shasum": ""
             },
             "require": {
                 "monolog/monolog": "@stable",
-                "thinframe/applications": "@stable"
+                "thinframe/applications": "dev-develop"
             },
             "type": "library",
             "extra": {
@@ -620,7 +620,7 @@
                 "monolog",
                 "thinframe"
             ],
-            "time": "2014-01-31 15:27:07"
+            "time": "2014-02-13 20:48:03"
         }
     ],
     "packages-dev": [

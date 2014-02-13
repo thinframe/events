@@ -43,8 +43,9 @@ class EventsApplication extends AbstractApplication
      */
     public function getParents()
     {
-        //noop
-        //TODO: implement monolog application
+        return [
+            new MonologApplication()
+        ];
     }
 
     /**
@@ -79,7 +80,7 @@ class EventsApplication extends AbstractApplication
      */
     protected function setMetadata(Map $metadata)
     {
-        // TODO: Implement setMetadata() method.
+        //noop
     }
 
 }
