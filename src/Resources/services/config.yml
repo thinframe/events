@@ -1,0 +1,3 @@
+events:
+  dispatcher_service: 'events.dispatcher'
+  listener_tag: 'events.listener'

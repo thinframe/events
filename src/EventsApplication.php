@@ -15,6 +15,7 @@ use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 use ThinFrame\Applications\DependencyInjection\InterfaceInjectionRule;
 use ThinFrame\Applications\DependencyInjection\TraitInjectionRule;
 use ThinFrame\Events\DependencyInjection\EventsCompilerPass;
+use ThinFrame\Events\DependencyInjection\EventsHybridExtension;
 use ThinFrame\Monolog\MonologApplication;
 
 /**
@@ -55,6 +56,7 @@ class EventsApplication extends AbstractApplication
     {
         $configurator
             ->addResource('Resources/services/services.yml')
+            ->addResource('Resources/services/config.yml')
             ->addInjectionRule(
                 new TraitInjectionRule('\ThinFrame\Events\DispatcherAwareTrait', 'events.dispatcher', 'setDispatcher')
             )
@@ -65,7 +67,8 @@ class EventsApplication extends AbstractApplication
                     'setDispatcher'
                 )
             )
-            ->addCompilerPass(new EventsCompilerPass());
+            ->addExtension($hybridExtension = new EventsHybridExtension())
+            ->addCompilerPass($hybridExtension);
     }
 
     /**

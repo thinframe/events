@@ -1,7 +1,7 @@
 <?php
 
 /**
- * /src/ThinFrame/Events/Tests/Samples/SampleListener.php
+ * src/Tests/Samples/SampleListener.php
  *
  * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)

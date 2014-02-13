@@ -1,7 +1,7 @@
 <?php
 
 /**
- * /src/ThinFrame/Events/Tests/DispatcherTest.php
+ * src/Tests/DispatcherTest.php
  *
  * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
