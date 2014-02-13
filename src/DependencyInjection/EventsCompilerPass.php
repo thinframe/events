@@ -3,7 +3,7 @@
 /**
  * /src/DependencyInjection/EventsCompilerPass.php
  *
- * @copyright 2013 Sorin Badea <sorin.badea91@gmail.com>
+ * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
 
@@ -25,8 +25,8 @@ use Symfony\Component\DependencyInjection\Reference;
  */
 class EventsCompilerPass implements CompilerPassInterface
 {
-    const EVENT_DISPATCHER_TAG = 'thinframe.events.dispatcher';
-    const EVENT_LISTENER_TAG   = 'thinframe.events.listener';
+    const EVENT_DISPATCHER_TAG = 'events.dispatcher';
+    const EVENT_LISTENER_TAG   = 'events.listener';
 
     /**
      * You can modify the container here before it is dumped to PHP code.

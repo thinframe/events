@@ -3,7 +3,7 @@
 /**
  * /src/ThinFrame/Events/Tests/ApplicationTest.php
  *
- * @copyright 2013 Sorin Badea <sorin.badea91@gmail.com>
+ * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
 
@@ -27,14 +27,16 @@ class ApplicationTest extends \PHPUnit_Framework_TestCase
     {
         $application = new EventsApplication();
 
+        $application->make();
+
         $this->assertEquals(
-            $application->getApplicationName(),
-            'ThinFrameEvents',
+            $application->getName(),
+            'EventsApplication',
             'Application name should be correct'
         );
 
         $this->assertTrue(
-            $application->getApplicationContainer()->get('thinframe.events.dispatcher') instanceof Dispatcher,
+            $application->getContainer()->get('events.dispatcher') instanceof Dispatcher,
             'Application should return the correct service'
         );
     }
