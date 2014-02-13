@@ -470,12 +470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/applications.git",
-                "reference": "b1f90cb9bdca923665b2a5e2d36a6b1b7cf5ad20"
+                "reference": "bffc51ad67fa0323a3449023b1279b27c23fb909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/applications/zipball/b1f90cb9bdca923665b2a5e2d36a6b1b7cf5ad20",
-                "reference": "b1f90cb9bdca923665b2a5e2d36a6b1b7cf5ad20",
+                "url": "https://api.github.com/repos/thinframe/applications/zipball/bffc51ad67fa0323a3449023b1279b27c23fb909",
+                "reference": "bffc51ad67fa0323a3449023b1279b27c23fb909",
                 "shasum": ""
             },
             "require": {
@@ -516,7 +516,7 @@
                 "ecosystem",
                 "thinframe"
             ],
-            "time": "2014-02-13 16:46:51"
+            "time": "2014-02-13 17:54:01"
         },
         {
             "name": "thinframe/foundation",
