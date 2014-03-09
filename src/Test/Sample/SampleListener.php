@@ -38,7 +38,7 @@ class SampleListener implements ListenerInterface
         ];
     }
 
-    public function onListenerTriggered(SimpleEvent $e)
+    public function onListenerTriggered(SimpleEvent $event)
     {
         $this->triggered = true;
     }

@@ -1,8 +1,6 @@
 <?php
 
 /**
- * /src/EventsApplication.php
- *
  * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
@@ -14,7 +12,6 @@ use ThinFrame\Applications\AbstractApplication;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 use ThinFrame\Applications\DependencyInjection\InterfaceInjectionRule;
 use ThinFrame\Applications\DependencyInjection\TraitInjectionRule;
-use ThinFrame\Events\DependencyInjection\EventsCompilerPass;
 use ThinFrame\Events\DependencyInjection\EventsHybridExtension;
 use ThinFrame\Monolog\MonologApplication;
 
@@ -82,5 +79,4 @@ class EventsApplication extends AbstractApplication
     {
         //noop
     }
-
 }

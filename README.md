@@ -16,7 +16,10 @@ Powerful events system.
 6. Plug and play via ThinFrame Applications System
 
 ###Installation:
-* via Composer: `"thinframe/events":"dev-master"`
+* via Composer: `"thinframe/events":0.3.*"`
 
-###Copyright
-* MIT License - Sorin Badea <sorin.badea91@gmail.com>
+###Contribuitors
+* Sorin Badea <sorin.badea91@gmail.com>
+
+###License
+* MIT License

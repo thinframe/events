@@ -1,8 +1,6 @@
 <?php
 
 /**
- * src/DependencyInjection/EventsConfiguration.php
- *
  * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
@@ -13,7 +11,7 @@ use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
- * Class EventsConfiguration
+ * EventsConfiguration
  *
  * @package ThinFrame\Events\DependencyInjection
  * @since   0.3
@@ -23,7 +21,7 @@ class EventsConfiguration implements ConfigurationInterface
     /**
      * Generates the configuration tree builder.
      *
-     * @return \Symfony\Component\Config\Definition\Builder\TreeBuilder The tree builder
+     * @return TreeBuilder The tree builder
      */
     public function getConfigTreeBuilder()
     {

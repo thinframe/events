@@ -51,7 +51,7 @@ class AbstractDispatcherTest extends \PHPUnit_Framework_TestCase
         $triggered = false;
 
         $dispatcher->onSomeEvent(
-            function (SimpleEvent $e) use (&$triggered) {
+            function (SimpleEvent $event) use (&$triggered) {
                 $triggered = true;
             }
         );

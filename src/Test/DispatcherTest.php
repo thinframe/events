@@ -96,7 +96,7 @@ class DispatcherTest extends \PHPUnit_Framework_TestCase
     {
         $triggered = false;
 
-        $callback = function (SimpleEvent $e) use (&$triggered) {
+        $callback = function (SimpleEvent $event) use (&$triggered) {
             $triggered = true;
         };
 
@@ -112,26 +112,26 @@ class DispatcherTest extends \PHPUnit_Framework_TestCase
      */
     public function testEventsPriorityAndPropagation()
     {
-        $critical_triggered = false;
-        $medium_triggered   = false;
+        $criticalTriggered = false;
+        $mediumTriggered   = false;
 
-        $critical_callback = function (SimpleEvent $e) use (&$critical_triggered) {
-            $critical_triggered = true;
-            $e->stopPropagation();
+        $criticalCallback = function (SimpleEvent $event) use (&$criticalTriggered) {
+            $criticalTriggered = true;
+            $event->stopPropagation();
         };
 
-        $medium_callback = function (SimpleEvent $e) use (&$medium_triggered) {
-            $medium_triggered = true;
+        $mediumCallback = function (SimpleEvent $event) use (&$mediumTriggered) {
+            $mediumTriggered = true;
         };
 
-        $this->dispatcher->attachTo('test.priority.propagation', $medium_callback, Priority::MEDIUM);
-        $this->dispatcher->attachTo('test.priority.propagation', $critical_callback, Priority::CRITICAL);
+        $this->dispatcher->attachTo('test.priority.propagation', $mediumCallback, Priority::MEDIUM);
+        $this->dispatcher->attachTo('test.priority.propagation', $criticalCallback, Priority::CRITICAL);
 
         $this->dispatcher->trigger(new SimpleEvent('test.priority.propagation'));
 
-        $this->assertTrue($critical_triggered, 'Critical callback should have been triggered');
+        $this->assertTrue($criticalTriggered, 'Critical callback should have been triggered');
 
-        $this->assertFalse($medium_triggered, 'Medium callback shouldn\'t have been triggered');
+        $this->assertFalse($mediumTriggered, 'Medium callback shouldn\'t have been triggered');
     }
 
     /**
@@ -141,7 +141,7 @@ class DispatcherTest extends \PHPUnit_Framework_TestCase
     {
         $triggered = false;
 
-        $callback = function (SimpleEvent $e) use (&$triggered) {
+        $callback = function (SimpleEvent $event) use (&$triggered) {
             $triggered = true;
         };
 
