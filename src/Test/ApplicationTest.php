@@ -1,8 +1,6 @@
 <?php
 
 /**
- * src/Tests/ApplicationTest.php
- *
  * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
@@ -13,7 +11,7 @@ use ThinFrame\Events\Dispatcher;
 use ThinFrame\Events\EventsApplication;
 
 /**
- * Class ApplicationTest
+ * ApplicationTest
  *
  * @package ThinFrame\Events\Tests
  * @since   0.2

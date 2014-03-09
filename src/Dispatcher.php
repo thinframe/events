@@ -14,7 +14,7 @@ use ThinFrame\Foundation\Constant\DataType;
 use ThinFrame\Foundation\Helper\TypeCheck;
 
 /**
- * Class Dispatcher
+ * Dispatcher
  *
  * @package ThinFrame\Events
  * @since   0.2

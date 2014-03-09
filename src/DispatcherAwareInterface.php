@@ -8,7 +8,7 @@
 namespace ThinFrame\Events;
 
 /**
- * Interface DispatcherAwareInterface - describes a dispatcher aware object
+ * DispatcherAwareInterface - should be implemented by classes that depends on the Dispatcher
  *
  * @package ThinFrame\Events
  * @since   0.2

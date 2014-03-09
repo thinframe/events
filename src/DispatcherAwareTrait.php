@@ -8,7 +8,7 @@
 namespace ThinFrame\Events;
 
 /**
- * Class DispatcherAwareTrait
+ * DispatcherAwareTrait - should be used by classes that depends on the Dispatcher
  *
  * @package ThinFrame\Events
  * @since   0.2

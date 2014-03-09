@@ -16,7 +16,7 @@ use ThinFrame\Events\DependencyInjection\EventsHybridExtension;
 use ThinFrame\Monolog\MonologApplication;
 
 /**
- * Class EventsApplication
+ * EventsApplication
  *
  * @package ThinFrame\Events
  * @since   0.2

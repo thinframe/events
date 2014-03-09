@@ -12,7 +12,7 @@ use ThinFrame\Foundation\Constant\DataType;
 use ThinFrame\Foundation\Helper\TypeCheck;
 
 /**
- * Class AbstractEvent
+ * AbstractEvent
  *
  * @package ThinFrame\Events
  * @since   0.2

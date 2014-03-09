@@ -12,7 +12,7 @@ use ThinFrame\Events\Constant\Priority;
 use ThinFrame\Foundation\Exception\InvalidArgumentException;
 
 /**
- * Class AbstractDispatcher
+ * AbstractDispatcher
  *
  * @package ThinFrame\Events
  * @since   0.2

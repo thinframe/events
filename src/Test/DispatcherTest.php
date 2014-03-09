@@ -1,8 +1,6 @@
 <?php
 
 /**
- * src/Tests/DispatcherTest.php
- *
  * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
@@ -18,7 +16,7 @@ use ThinFrame\Events\Test\Sample\SampleListener;
 use ThinFrame\Foundation\Exception\InvalidArgumentException;
 
 /**
- * Class DispatcherTest
+ * DispatcherTest
  *
  * @package ThinFrame\Events\Tests
  * @since   0.2
