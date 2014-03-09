@@ -10,8 +10,8 @@
 namespace ThinFrame\Events;
 
 use Stringy\StaticStringy;
-use ThinFrame\Events\Constants\Priority;
-use ThinFrame\Foundation\Exceptions\InvalidArgumentException;
+use ThinFrame\Events\Constant\Priority;
+use ThinFrame\Foundation\Exception\InvalidArgumentException;
 
 /**
  * Class AbstractDispatcher
@@ -25,7 +25,7 @@ abstract class AbstractDispatcher extends Dispatcher
      * @param       $name
      * @param array $arguments
      *
-     * @throws \ThinFrame\Foundation\Exceptions\InvalidArgumentException
+     * @throws \ThinFrame\Foundation\Exception\InvalidArgumentException
      * @throws \BadMethodCallException
      */
     public function __call($name, array $arguments)

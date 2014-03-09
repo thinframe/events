@@ -7,9 +7,9 @@
  * @license   MIT license (see the license file in the root directory)
  */
 
-namespace ThinFrame\Events\Tests\Samples;
+namespace ThinFrame\Events\Test\Sample;
 
-use ThinFrame\Events\Constants\Priority;
+use ThinFrame\Events\Constant\Priority;
 use ThinFrame\Events\ListenerInterface;
 use ThinFrame\Events\SimpleEvent;
 

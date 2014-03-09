@@ -7,13 +7,13 @@
  * @license   MIT license (see the license file in the root directory)
  */
 
-namespace ThinFrame\Events\Tests;
+namespace ThinFrame\Events\Test;
 
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
 use ThinFrame\Events\SimpleEvent;
-use ThinFrame\Events\Tests\Samples\SampleDispatcher;
-use ThinFrame\Foundation\Exceptions\InvalidArgumentException;
+use ThinFrame\Events\Test\Sample\SampleDispatcher;
+use ThinFrame\Foundation\Exception\InvalidArgumentException;
 
 /**
  * Class AbstractDispatcherTest

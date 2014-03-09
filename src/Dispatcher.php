@@ -11,9 +11,9 @@ namespace ThinFrame\Events;
 
 use PhpCollection\Map;
 use Psr\Log\LoggerAwareTrait;
-use ThinFrame\Events\Constants\Priority;
-use ThinFrame\Foundation\Constants\DataType;
-use ThinFrame\Foundation\Helpers\TypeCheck;
+use ThinFrame\Events\Constant\Priority;
+use ThinFrame\Foundation\Constant\DataType;
+use ThinFrame\Foundation\Helper\TypeCheck;
 
 /**
  * Class Dispatcher

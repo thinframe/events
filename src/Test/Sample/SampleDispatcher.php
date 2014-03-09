@@ -7,7 +7,7 @@
  * @license   MIT license (see the license file in the root directory)
  */
 
-namespace ThinFrame\Events\Tests\Samples;
+namespace ThinFrame\Events\Test\Sample;
 
 use ThinFrame\Events\AbstractDispatcher;
 

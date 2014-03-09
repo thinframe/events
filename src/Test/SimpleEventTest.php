@@ -7,10 +7,10 @@
  * @license   MIT license (see the license file in the root directory)
  */
 
-namespace ThinFrame\Events\Tests;
+namespace ThinFrame\Events\Test;
 
 use ThinFrame\Events\SimpleEvent;
-use ThinFrame\Foundation\Exceptions\InvalidArgumentException;
+use ThinFrame\Foundation\Exception\InvalidArgumentException;
 
 /**
  * Class SimpleEventTest

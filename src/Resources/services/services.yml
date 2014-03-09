@@ -5,6 +5,6 @@ services:
           - { name: 'events.dispatcher'}
 
     events.sample_listener:
-        class: 'ThinFrame\Events\Tests\Samples\SampleListener'
+        class: 'ThinFrame\Events\Test\Sample\SampleListener'
         tags:
           - { name: 'events.listener' }

@@ -7,9 +7,9 @@
  * @license   MIT license (see the license file in the root directory)
  */
 
-namespace ThinFrame\Events\Constants;
+namespace ThinFrame\Events\Constant;
 
-use ThinFrame\Foundation\DataTypes\AbstractEnum;
+use ThinFrame\Foundation\DataType\AbstractEnum;
 
 /**
  * Class Priority
