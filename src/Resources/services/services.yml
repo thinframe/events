@@ -1,6 +1,6 @@
 services:
     events.dispatcher:
-        class: 'ThinFrame\Events\Dispatcher'
+        class: '%events.dispatcher.class%'
         tags:
           - { name: 'events.dispatcher'}
 
