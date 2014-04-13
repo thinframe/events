@@ -1,22 +1,22 @@
 <?php
 
 /**
- * /src/EventsApplication.php
- *
- * @copyright 2013 Sorin Badea <sorin.badea91@gmail.com>
+ * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
 
 namespace ThinFrame\Events;
 
+use PhpCollection\Map;
 use ThinFrame\Applications\AbstractApplication;
-use ThinFrame\Applications\DependencyInjection\AwareDefinition;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
-use ThinFrame\Events\DependencyInjection\EventsCompilerPass;
+use ThinFrame\Applications\DependencyInjection\InterfaceInjectionRule;
+use ThinFrame\Applications\DependencyInjection\TraitInjectionRule;
+use ThinFrame\Events\DependencyInjection\EventsHybridExtension;
 use ThinFrame\Monolog\MonologApplication;
 
 /**
- * Class EventsApplication
+ * EventsApplication
  *
  * @package ThinFrame\Events
  * @since   0.2
@@ -24,62 +24,59 @@ use ThinFrame\Monolog\MonologApplication;
 class EventsApplication extends AbstractApplication
 {
     /**
-     * initialize configurator
-     *
-     * @param ContainerConfigurator $configurator
-     *
-     * @return mixed
-     */
-    public function initializeConfigurator(ContainerConfigurator $configurator)
-    {
-        $configurator->addAwareDefinition(
-            new AwareDefinition(
-                '\ThinFrame\Events\DispatcherAwareInterface',
-                'setDispatcher',
-                'thinframe.events.dispatcher'
-            )
-        );
-        $configurator->addAwareDefinition(
-            new AwareDefinition(
-                '\ThinFrame\Events\DispatcherAwareTrait',
-                'setDispatcher',
-                'thinframe.events.dispatcher'
-            )
-        );
-        $configurator->addCompilerPass(new EventsCompilerPass());
-    }
-
-    /**
      * Get application name
      *
      * @return string
      */
-    public function getApplicationName()
+    public function getName()
     {
-        return 'ThinFrameEvents';
+        return $this->reflector->getShortName();
     }
 
     /**
-     * Get configuration files
-     *
-     * @return mixed
-     */
-    public function getConfigurationFiles()
-    {
-        return [
-            'resources/services.yml'
-        ];
-    }
-
-    /**
-     * Get parent applications
+     * Get application parents
      *
      * @return AbstractApplication[]
      */
-    protected function getParentApplications()
+    public function getParents()
     {
         return [
             new MonologApplication()
         ];
+    }
+
+    /**
+     * Set different options for the container configurator
+     *
+     * @param ContainerConfigurator $configurator
+     */
+    protected function setConfiguration(ContainerConfigurator $configurator)
+    {
+        $configurator
+            ->addResource('Resources/services/services.yml')
+            ->addResource('Resources/services/config.yml')
+            ->addInjectionRule(
+                new TraitInjectionRule('\ThinFrame\Events\DispatcherAwareTrait', 'events.dispatcher', 'setDispatcher')
+            )
+            ->addInjectionRule(
+                new InterfaceInjectionRule(
+                    '\ThinFrame\Events\DispatcherAwareInterface',
+                    'events.dispatcher',
+                    'setDispatcher'
+                )
+            )
+            ->addExtension($hybridExtension = new EventsHybridExtension())
+            ->addCompilerPass($hybridExtension);
+    }
+
+    /**
+     * Set application metadata
+     *
+     * @param Map $metadata
+     *
+     */
+    protected function setMetadata(Map $metadata)
+    {
+        //noop
     }
 }

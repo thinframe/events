@@ -1,16 +1,14 @@
 <?php
 
 /**
- * /src/DispatcherAwareInterface.php
- *
- * @copyright 2013 Sorin Badea <sorin.badea91@gmail.com>
+ * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
 
 namespace ThinFrame\Events;
 
 /**
- * Interface DispatcherAwareInterface - describes a dispatcher aware object
+ * DispatcherAwareInterface - should be implemented by classes that depends on the Dispatcher
  *
  * @package ThinFrame\Events
  * @since   0.2

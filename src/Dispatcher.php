@@ -1,9 +1,7 @@
 <?php
 
 /**
- * /src/Dispatcher.php
- *
- * @copyright 2013 Sorin Badea <sorin.badea91@gmail.com>
+ * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
 
@@ -11,12 +9,12 @@ namespace ThinFrame\Events;
 
 use PhpCollection\Map;
 use Psr\Log\LoggerAwareTrait;
-use ThinFrame\Events\Constants\Priority;
-use ThinFrame\Foundation\Constants\DataType;
-use ThinFrame\Foundation\Helpers\TypeCheck;
+use ThinFrame\Events\Constant\Priority;
+use ThinFrame\Foundation\Constant\DataType;
+use ThinFrame\Foundation\Helper\TypeCheck;
 
 /**
- * Class Dispatcher
+ * Dispatcher
  *
  * @package ThinFrame\Events
  * @since   0.2

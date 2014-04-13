@@ -1,20 +1,18 @@
 <?php
 
 /**
- * /src/AbstractDispatcher.php
- *
- * @copyright 2013 Sorin Badea <sorin.badea91@gmail.com>
+ * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
 
 namespace ThinFrame\Events;
 
 use Stringy\StaticStringy;
-use ThinFrame\Events\Constants\Priority;
-use ThinFrame\Foundation\Exceptions\InvalidArgumentException;
+use ThinFrame\Events\Constant\Priority;
+use ThinFrame\Foundation\Exception\InvalidArgumentException;
 
 /**
- * Class AbstractDispatcher
+ * AbstractDispatcher
  *
  * @package ThinFrame\Events
  * @since   0.2
@@ -25,7 +23,7 @@ abstract class AbstractDispatcher extends Dispatcher
      * @param       $name
      * @param array $arguments
      *
-     * @throws \ThinFrame\Foundation\Exceptions\InvalidArgumentException
+     * @throws \ThinFrame\Foundation\Exception\InvalidArgumentException
      * @throws \BadMethodCallException
      */
     public function __call($name, array $arguments)

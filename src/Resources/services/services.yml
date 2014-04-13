@@ -1,0 +1,10 @@
+services:
+    events.dispatcher:
+        class: '%events.dispatcher.class%'
+        tags:
+          - { name: 'events.dispatcher'}
+
+    events.sample_listener:
+        class: 'ThinFrame\Events\Test\Sample\SampleListener'
+        tags:
+          - { name: 'events.listener' }

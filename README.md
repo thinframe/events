@@ -2,7 +2,7 @@
 
 Powerful events system.
 
-[![Build Status](https://secure.travis-ci.org/thinframe/events.png?branch=master)](http://travis-ci.org/thinframe/events)
+[![Build Status](https://secure.travis-ci.org/thinframe/events.png?branch=develop)](http://travis-ci.org/thinframe/events)
 [![Latest Stable Version](https://poser.pugx.org/thinframe/events/v/stable.png)](https://packagist.org/packages/thinframe/events)
 [![Latest Unstable Version](https://poser.pugx.org/thinframe/events/v/unstable.png)](https://packagist.org/packages/thinframe/events)
 [![License](https://poser.pugx.org/thinframe/events/license.png)](https://packagist.org/packages/thinframe/events)
@@ -16,7 +16,10 @@ Powerful events system.
 6. Plug and play via ThinFrame Applications System
 
 ###Installation:
-* via Composer: `"thinframe/events":"dev-master"`
+* via Composer: `"thinframe/events":0.3.*"`
 
-###Copyright
-* MIT License - Sorin Badea <sorin.badea91@gmail.com>
+###Contribuitors
+* Sorin Badea <sorin.badea91@gmail.com>
+
+###License
+* MIT License

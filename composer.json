@@ -18,13 +18,13 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "thinframe/foundation": "@stable",
-        "thinframe/applications": "@stable",
-        "thinframe/monolog": "dev-master"
+        "thinframe/foundation": "dev-develop",
+        "thinframe/applications": "dev-develop",
+        "thinframe/monolog": "dev-develop"
     },
     "minimum-stability": "dev",
     "require-dev": {
-        "phpunit/phpunit": "@stable"
+        "phpunit/phpunit": "3.7.32"
     },
     "autoload": {
         "psr-4": {
@@ -33,7 +33,8 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.2-dev"
+            "dev-master": "0.2-dev",
+            "dev-develop": "0.3-dev"
         }
     }
 }

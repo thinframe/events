@@ -1,22 +1,20 @@
 <?php
 
 /**
- * /src/ThinFrame/Events/Tests/AbstractDispatcherTest.php
- *
- * @copyright 2013 Sorin Badea <sorin.badea91@gmail.com>
+ * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
 
-namespace ThinFrame\Events\Tests;
+namespace ThinFrame\Events\Test;
 
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
 use ThinFrame\Events\SimpleEvent;
-use ThinFrame\Events\Tests\Samples\SampleDispatcher;
-use ThinFrame\Foundation\Exceptions\InvalidArgumentException;
+use ThinFrame\Events\Test\Sample\SampleDispatcher;
+use ThinFrame\Foundation\Exception\InvalidArgumentException;
 
 /**
- * Class AbstractDispatcherTest
+ * AbstractDispatcherTest
  *
  * @package ThinFrame\Events\Tests
  * @since   0.2
@@ -51,7 +49,7 @@ class AbstractDispatcherTest extends \PHPUnit_Framework_TestCase
         $triggered = false;
 
         $dispatcher->onSomeEvent(
-            function (SimpleEvent $e) use (&$triggered) {
+            function (SimpleEvent $event) use (&$triggered) {
                 $triggered = true;
             }
         );

@@ -1,20 +1,18 @@
 <?php
 
 /**
- * /src/ThinFrame/Events/Tests/Samples/SampleListener.php
- *
- * @copyright 2013 Sorin Badea <sorin.badea91@gmail.com>
+ * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
 
-namespace ThinFrame\Events\Tests\Samples;
+namespace ThinFrame\Events\Test\Sample;
 
-use ThinFrame\Events\Constants\Priority;
+use ThinFrame\Events\Constant\Priority;
 use ThinFrame\Events\ListenerInterface;
 use ThinFrame\Events\SimpleEvent;
 
 /**
- * Class SampleListener
+ * SampleListener
  *
  * @package ThinFrame\Events\Tests\Samples
  * @since   0.2
@@ -38,7 +36,7 @@ class SampleListener implements ListenerInterface
         ];
     }
 
-    public function onListenerTriggered(SimpleEvent $e)
+    public function onListenerTriggered(SimpleEvent $event)
     {
         $this->triggered = true;
     }

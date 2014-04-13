@@ -1,19 +1,17 @@
 <?php
 
 /**
- * /src/ThinFrame/Events/Tests/SimpleEventTest.php
- *
- * @copyright 2013 Sorin Badea <sorin.badea91@gmail.com>
+ * @author    Sorin Badea <sorin.badea91@gmail.com>
  * @license   MIT license (see the license file in the root directory)
  */
 
-namespace ThinFrame\Events\Tests;
+namespace ThinFrame\Events\Test;
 
 use ThinFrame\Events\SimpleEvent;
-use ThinFrame\Foundation\Exceptions\InvalidArgumentException;
+use ThinFrame\Foundation\Exception\InvalidArgumentException;
 
 /**
- * Class SimpleEventTest
+ * SimpleEventTest
  *
  * @package ThinFrame\Events\Tests
  * @since   0.2

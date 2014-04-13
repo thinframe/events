@@ -1,0 +1,6 @@
+parameters:
+    events.dispatcher.class: 'ThinFrame\Events\Dispatcher'
+
+events:
+  dispatcher_service: 'events.dispatcher'
+  listener_tag: 'events.listener'

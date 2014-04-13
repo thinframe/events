@@ -8,4 +8,4 @@ before_script:
   - composer self-update
   - composer install --dev --prefer-source
 
-script: vendor/bin/phpunit --coverage-text --bootstrap vendor/autoload.php src/Tests/
+script: vendor/bin/phpunit --coverage-text --bootstrap vendor/autoload.php src/Test/
